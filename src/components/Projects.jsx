@@ -1,9 +1,11 @@
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardText, MDBCardTitle, MDBCol, MDBContainer, MDBRipple, MDBRow } from 'mdb-react-ui-kit'
 import React from 'react'
+import TypeProjects from './TypeProjects'
 
 const Projects = () => {
   return (
     <MDBContainer>
+        <TypeProjects />
       <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
         <MDBCol>
                   <MDBCard className='h-100'>

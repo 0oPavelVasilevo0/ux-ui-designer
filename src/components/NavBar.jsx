@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { MDBNavbar, MDBBtn, MDBCollapse, MDBContainer, MDBDropdown, MDBDropdownItem, MDBDropdownMenu, MDBDropdownToggle, MDBIcon, MDBNavbarItem, MDBNavbarLink, MDBNavbarNav, MDBNavbarToggler, MDBNavbarBrand } from 'mdb-react-ui-kit';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     const [showNavRight, setShowNavRight] = useState(false);
@@ -12,7 +13,7 @@ const NavBar = () => {
 
         <MDBNavbar expand='lg' sticky light bgColor='light'>
             <MDBContainer >
-                <MDBNavbarBrand href='#'>Navbar</MDBNavbarBrand>
+                <MDBNavbarBrand>Navbar</MDBNavbarBrand>
                 <MDBNavbarToggler
                     type='button'
                     data-target='#navbarRightAlignExample'
@@ -27,12 +28,17 @@ const NavBar = () => {
                 <MDBCollapse navbar show={showNavRight}>
                     <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
                         <MDBNavbarItem>
-                            <MDBNavbarLink active aria-current='page' href='#'>
-                                Home
+                            {/* <NavLink to='/'>Home</NavLink> */}
+                            <MDBNavbarLink active aria-current='page'>
+
+                                <NavLink to='/'>Home</NavLink>
                             </MDBNavbarLink>
                         </MDBNavbarItem>
                         <MDBNavbarItem>
-                            <MDBNavbarLink href='#'>Projects</MDBNavbarLink>
+                            {/* <NavLink to='/projects'>Projects</NavLink> */}
+                            <MDBNavbarLink  to='/projects'>
+                                <NavLink to='/projects'>Projects</NavLink>
+                            </MDBNavbarLink>
                         </MDBNavbarItem>
 
 
