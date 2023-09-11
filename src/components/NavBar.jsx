@@ -9,7 +9,7 @@ const NavBar = () => {
 
     return (
 
-        <MDBNavbar expand='lg' sticky light bgColor='light'>
+        <MDBNavbar expand='lg' sticky dark bgColor='dark'>
             <MDBContainer >
                 <NavLink to='/'>
                     <MDBNavbarBrand>Navbar</MDBNavbarBrand>
@@ -56,7 +56,7 @@ const NavBar = () => {
 
                         <MDBNavbarItem>
                             <MDBDropdown>
-                                <MDBDropdownToggle tag='a' className='hidden-arrow me-3 me-lg-0 nav-link'>
+                                <MDBDropdownToggle tag='a' className='hidden-arrow me-3 me-lg-0 nav-link' style={{cursor: 'pointer'}}>
                                     <MDBIcon flag='united-kingdom' className='m-0' />
                                 </MDBDropdownToggle>
                                 <MDBDropdownMenu>

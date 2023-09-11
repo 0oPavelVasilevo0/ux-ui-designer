@@ -1,10 +1,10 @@
-import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardText, MDBCardTitle, MDBCol, MDBRipple, MDBRow } from 'mdb-react-ui-kit'
+import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardText, MDBCardTitle, MDBCol, MDBCollapse, MDBContainer, MDBRipple, MDBRow } from 'mdb-react-ui-kit'
 import React from 'react'
 import Modal from './Modal'
 
 const Projects = () => {
   return (
-    <>
+      <>
        
       <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
         <MDBCol>

@@ -16,29 +16,32 @@ const TypeProjects = () => {
     };
 
     return (
-        <>
-            <MDBContainer >
-                <MDBContainer className='mt-3' >
-                    <MDBTabs pills justify className='mb-5'>
-                        <MDBTabsItem>
-                            <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'}>
-                                Web
-                            </MDBTabsLink>
-                        </MDBTabsItem>
-                        <MDBTabsItem>
-                            <MDBTabsLink onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'}>
-                                Graphic
-                            </MDBTabsLink>
-                        </MDBTabsItem>
-                    </MDBTabs>
-                </MDBContainer>
 
-                <MDBTabsContent>
-                    <MDBTabsPane show={justifyActive === 'tab1'}><Projects /></MDBTabsPane>
-                    <MDBTabsPane show={justifyActive === 'tab2'}><GraphicDesign /></MDBTabsPane>
-                </MDBTabsContent>
-            </MDBContainer>
-        </>
+        <MDBContainer fluid className='pb-3 bg-image' style={{ backgroundImage: `url(${require('./../../src/img/stock_.png')})` }} >
+            {/* <MDBContainer fluid  style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}> */}
+                <MDBContainer>
+                    <MDBContainer className='pt-3' >
+                        <MDBTabs pills justify className='mb-5'>
+                            <MDBTabsItem>
+                                <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'}>
+                                    Web
+                                </MDBTabsLink>
+                            </MDBTabsItem>
+                            <MDBTabsItem>
+                                <MDBTabsLink onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'}>
+                                    Graphic
+                                </MDBTabsLink>
+                            </MDBTabsItem>
+                        </MDBTabs>
+                    </MDBContainer>
+
+                    <MDBTabsContent>
+                        <MDBTabsPane show={justifyActive === 'tab1'}><Projects /></MDBTabsPane>
+                        <MDBTabsPane show={justifyActive === 'tab2'}><GraphicDesign /></MDBTabsPane>
+                    </MDBTabsContent>
+                </MDBContainer>
+            {/* </MDBContainer> */}
+        </MDBContainer>
 
 
         // <MDBContainer className="px-4 d-flex align-items-center justify-content-center" style={{ height: '100vh'}} >
@@ -65,6 +68,7 @@ const TypeProjects = () => {
         //             </div>
         //         </MDBCol>
         //     </MDBRow>
+
 
 
         // </MDBContainer>
