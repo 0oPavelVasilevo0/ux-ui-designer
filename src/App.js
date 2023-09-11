@@ -10,6 +10,7 @@ import TypeProjects from './components/TypeProjects';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
 import GraphicDesign from './components/GraphicDesign';
+import Info from './components/Info';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/projects" element={<TypeProjects />} />
           <Route exact path='/web_projects' element={<Projects />} />
           <Route exact path='/graphic_projects' element={<GraphicDesign />} />
+          <Route exact path='/info' element={<Info />} />
       {/* <Header /> */}
       {/* <TypeProjects /> */}
       {/* <Projects /> */}

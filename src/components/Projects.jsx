@@ -5,18 +5,8 @@ import { NavLink } from 'react-router-dom'
 
 const Projects = () => {
   return (
-    <MDBContainer>
-        {/* <TypeProjects /> */}
-        <NavLink to='/projects'>
-        <MDBBtn className='m-4'>
-              return to project selection
-        </MDBBtn>
-          </NavLink>
-          <NavLink to='/graphic_projects'>
-              <MDBBtn className='m-4'>
-                  to graphic design
-              </MDBBtn>
-          </NavLink>
+    <>
+       
       <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
         <MDBCol>
                   <MDBCard className='h-100'>
@@ -121,26 +111,9 @@ const Projects = () => {
                   </MDBCard>
               </MDBCol>
               
-          {/* <MDBCol>
-              <MDBCard className='h-100'>
-                  <MDBCardImage
-                      src='https://mdbootstrap.com/img/new/standard/city/041.webp'
-                      alt='...'
-                      position='top'
-                  />
-                  <MDBCardBody>
-                      <MDBCardTitle>Card title</MDBCardTitle>
-                      <MDBCardText>
-                          This is a longer card with supporting text below as a natural lead-in to additional content.
-                          This content is a little bit longer.
-                      </MDBCardText>
-                  </MDBCardBody>
-              </MDBCard>
-          </MDBCol> */}
 
       </MDBRow>
-      <br/>
-      </MDBContainer>
+      </>
   )
 }
 
