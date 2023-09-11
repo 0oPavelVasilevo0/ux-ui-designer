@@ -1,6 +1,6 @@
 import { MDBBtn } from 'mdb-react-ui-kit';
 import React from 'react';
-
+import img from './../../src/img/stock_.png'
 
 const Info = () => {
 
@@ -22,6 +22,7 @@ const Info = () => {
             <p>Scroll down</p>
             <p>Scroll down</p>
             <p>Scroll down</p>
+            <img src={img}></img>
        </>
     );
 }

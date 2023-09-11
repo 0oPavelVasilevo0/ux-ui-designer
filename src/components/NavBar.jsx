@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
-import { MDBNavbar, MDBBtn, MDBCollapse, MDBContainer, MDBDropdown, MDBDropdownItem, MDBDropdownMenu, MDBDropdownToggle, MDBIcon, MDBNavbarItem, MDBNavbarLink, MDBNavbarNav, MDBNavbarToggler, MDBNavbarBrand } from 'mdb-react-ui-kit';
+import { MDBNavbar, MDBCollapse, MDBContainer, MDBDropdown, MDBDropdownItem, MDBDropdownMenu, MDBDropdownToggle, MDBIcon, MDBNavbarItem, MDBNavbarLink, MDBNavbarNav, MDBNavbarToggler, MDBNavbarBrand } from 'mdb-react-ui-kit';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     const [showNavRight, setShowNavRight] = useState(false);
 
     return (
-       
-
 
         <MDBNavbar expand='lg' sticky light bgColor='light'>
             <MDBContainer >
                 <NavLink to='/'>
                     <MDBNavbarBrand>Navbar</MDBNavbarBrand>
                 </NavLink>
+
+                
 
                 <MDBNavbarToggler
                     type='button'
@@ -52,6 +52,7 @@ const NavBar = () => {
                             </NavLink>
                         </MDBNavbarItem>
 
+                       
 
                         <MDBNavbarItem>
                             <MDBDropdown>
@@ -78,6 +79,36 @@ const NavBar = () => {
             </MDBContainer>
         </MDBNavbar>
 
+        //               <MDBNavbarItem>
+        //                     <MDBNavbarLink
+        //                         className="px-2"
+        //                         href="https://www.facebook.com/mdbootstrap"
+        //                         rel="nofollow"
+        //                         target="_blank"
+        //                     >
+        //                         <MDBIcon fab icon="facebook-f" />
+        //                     </MDBNavbarLink>
+        //                 </MDBNavbarItem>
+        //                 <MDBNavbarItem>
+        //                     <MDBNavbarLink
+        //                         className="px-2"
+        //                         href="https://twitter.com/MDBootstrap"
+        //                         rel="nofollow"
+        //                         target="_blank"
+        //                     >
+        //                         <MDBIcon fab icon="twitter" />
+        //                     </MDBNavbarLink>
+        //                 </MDBNavbarItem>
+        //                 <MDBNavbarItem>
+        //                     <MDBNavbarLink
+        //                         className="ps-2"
+        //                         href="https://github.com/mdbootstrap/mdb-ui-kit"
+        //                         rel="nofollow"
+        //                         target="_blank"
+        //                     >
+        //                         <MDBIcon fab icon="github" />
+        //                     </MDBNavbarLink>
+        //                 </MDBNavbarItem>
 
     );
 }

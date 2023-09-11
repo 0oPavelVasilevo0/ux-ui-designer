@@ -1,4 +1,4 @@
-import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardText, MDBCardTitle, MDBCol, MDBContainer, MDBRipple, MDBRow } from 'mdb-react-ui-kit'
+import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardText, MDBCardTitle, MDBCol, MDBRipple, MDBRow } from 'mdb-react-ui-kit'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
@@ -12,12 +12,12 @@ const GraphicDesign = () => {
                   <MDBCard className='h-100'>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                           <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' fluid alt='...' />
-                          <a>
+                         
                               <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-                          </a>
+                          
                       </MDBRipple>
                       <MDBCardBody>
-                          <MDBCardTitle>Card title graphic</MDBCardTitle>
+                          <MDBCardTitle>Project1 graphic</MDBCardTitle>
                           <MDBCardText>
                               Some quick example text to build on the card title and make up the bulk of the card's content.
                           </MDBCardText>
@@ -29,12 +29,12 @@ const GraphicDesign = () => {
                   <MDBCard>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                           <MDBCardImage src='https://mdbootstrap.com/img/new/standard/city/041.webp' fluid alt='...' />
-                          <a>
+                          
                               <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-                          </a>
+                         
                       </MDBRipple>
                       <MDBCardBody>
-                          <MDBCardTitle>Card title</MDBCardTitle>
+                          <MDBCardTitle>Project2 graphic</MDBCardTitle>
                           <MDBCardText>
                               Some quick example text to build on the card title and make up the bulk of the card's content.
                           </MDBCardText>
@@ -46,12 +46,12 @@ const GraphicDesign = () => {
                   <MDBCard>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                           <MDBCardImage src='https://mdbootstrap.com/img/new/standard/city/042.webp' fluid alt='...' />
-                          <a>
+                         
                               <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-                          </a>
+                         
                       </MDBRipple>
                       <MDBCardBody>
-                          <MDBCardTitle>Card title</MDBCardTitle>
+                          <MDBCardTitle>Project3 graphic</MDBCardTitle>
                           <MDBCardText>
                               Some quick example text to build on the card title and make up the bulk of the card's content.
                           </MDBCardText>
@@ -63,12 +63,12 @@ const GraphicDesign = () => {
                   <MDBCard>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                           <MDBCardImage src='https://mdbootstrap.com/img/new/standard/city/044.webp' fluid alt='...' />
-                          <a>
+                        
                               <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-                          </a>
+                        
                       </MDBRipple>
                       <MDBCardBody>
-                          <MDBCardTitle>Card title</MDBCardTitle>
+                          <MDBCardTitle>Project4 graphic</MDBCardTitle>
                           <MDBCardText>
                               Some quick example text to build on the card title and make up the bulk of the card's content.
                           </MDBCardText>
@@ -80,12 +80,12 @@ const GraphicDesign = () => {
                   <MDBCard>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                           <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' fluid alt='...' />
-                          <a>
+                          
                               <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-                          </a>
+                         
                       </MDBRipple>
                       <MDBCardBody>
-                          <MDBCardTitle>Card title</MDBCardTitle>
+                          <MDBCardTitle>Project5 graphic</MDBCardTitle>
                           <MDBCardText>
                               Some quick example text to build on the card title and make up the bulk of the card's content.
                           </MDBCardText>
@@ -97,12 +97,12 @@ const GraphicDesign = () => {
                   <MDBCard>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                           <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' fluid alt='...' />
-                          <a>
+                        
                               <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-                          </a>
+                         
                       </MDBRipple>
                       <MDBCardBody>
-                          <MDBCardTitle>Card title</MDBCardTitle>
+                          <MDBCardTitle>Project6 graphic</MDBCardTitle>
                           <MDBCardText>
                               Some quick example text to build on the card title and make up the bulk of the card's content.
                           </MDBCardText>

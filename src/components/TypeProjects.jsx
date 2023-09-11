@@ -22,12 +22,12 @@ const TypeProjects = () => {
                     <MDBTabs pills justify className='mb-5'>
                         <MDBTabsItem>
                             <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'}>
-                                Link
+                                Web
                             </MDBTabsLink>
                         </MDBTabsItem>
                         <MDBTabsItem>
                             <MDBTabsLink onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'}>
-                                Very link
+                                Graphic
                             </MDBTabsLink>
                         </MDBTabsItem>
                     </MDBTabs>
