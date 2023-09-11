@@ -2,6 +2,7 @@ import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardText, MDBCardTitle, 
 import React from 'react'
 import TypeProjects from './TypeProjects'
 import { NavLink } from 'react-router-dom'
+import Modal from './Modal'
 
 const Projects = () => {
   return (
@@ -21,12 +22,12 @@ const Projects = () => {
                           <MDBCardText>
                               Some quick example text to build on the card title and make up the bulk of the card's content.
                           </MDBCardText>
-                          <MDBBtn href='#'>Button</MDBBtn>
+                          <MDBBtn href='#'><Modal /></MDBBtn>
                       </MDBCardBody>
                   </MDBCard>
         </MDBCol>
               <MDBCol>
-                  <MDBCard>
+                  <MDBCard className='h-100'>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                           <MDBCardImage src='https://mdbootstrap.com/img/new/standard/city/041.webp' fluid alt='...' />
                           <a>
@@ -43,7 +44,7 @@ const Projects = () => {
                   </MDBCard>
               </MDBCol>
               <MDBCol>
-                  <MDBCard>
+                  <MDBCard className='h-100'>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                           <MDBCardImage src='https://mdbootstrap.com/img/new/standard/city/042.webp' fluid alt='...' />
                           <a>
@@ -60,7 +61,7 @@ const Projects = () => {
                   </MDBCard>
               </MDBCol>
               <MDBCol>
-                  <MDBCard>
+                  <MDBCard className='h-100'>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                           <MDBCardImage src='https://mdbootstrap.com/img/new/standard/city/044.webp' fluid alt='...' />
                           <a>
@@ -77,7 +78,7 @@ const Projects = () => {
                   </MDBCard>
               </MDBCol>
               <MDBCol>
-                  <MDBCard>
+                  <MDBCard className='h-100'>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                           <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' fluid alt='...' />
                           <a>
@@ -94,7 +95,7 @@ const Projects = () => {
                   </MDBCard>
               </MDBCol>
               <MDBCol>
-                  <MDBCard>
+                  <MDBCard className='h-100'>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                           <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' fluid alt='...' />
                           <a>
