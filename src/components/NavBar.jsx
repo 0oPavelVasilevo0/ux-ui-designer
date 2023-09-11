@@ -13,7 +13,10 @@ const NavBar = () => {
 
         <MDBNavbar expand='lg' sticky light bgColor='light'>
             <MDBContainer >
-                <MDBNavbarBrand>Navbar</MDBNavbarBrand>
+                <NavLink to='/'>
+                    <MDBNavbarBrand>Navbar</MDBNavbarBrand>
+                </NavLink>
+
                 <MDBNavbarToggler
                     type='button'
                     data-target='#navbarRightAlignExample'
@@ -29,16 +32,20 @@ const NavBar = () => {
                     <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
                         <MDBNavbarItem>
                             {/* <NavLink to='/'>Home</NavLink> */}
-                            <MDBNavbarLink active aria-current='page'>
-
-                                <NavLink to='/'>Home</NavLink>
-                            </MDBNavbarLink>
+                            <NavLink to='/'>
+                                {/* <MDBNavbarLink active aria-current='page'> */}
+                                <MDBNavbarLink>
+                                    Home
+                                </MDBNavbarLink>
+                            </NavLink>
                         </MDBNavbarItem>
                         <MDBNavbarItem>
                             {/* <NavLink to='/projects'>Projects</NavLink> */}
-                            <MDBNavbarLink  to='/projects'>
-                                <NavLink to='/projects'>Projects</NavLink>
-                            </MDBNavbarLink>
+                            <NavLink to='/projects'>
+                                <MDBNavbarLink to='/projects'>
+                                    Projects
+                                </MDBNavbarLink>
+                            </NavLink>
                         </MDBNavbarItem>
 
 

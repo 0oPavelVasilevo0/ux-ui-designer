@@ -1,24 +1,23 @@
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardText, MDBCardTitle, MDBCol, MDBContainer, MDBRipple, MDBRow } from 'mdb-react-ui-kit'
 import React from 'react'
-import TypeProjects from './TypeProjects'
 import { NavLink } from 'react-router-dom'
 
-const Projects = () => {
+const GraphicDesign = () => {
   return (
-    <MDBContainer>
-        {/* <TypeProjects /> */}
-        <NavLink to='/projects'>
-        <MDBBtn className='m-4'>
-              return to project selection
-        </MDBBtn>
-          </NavLink>
-          <NavLink to='/graphic_projects'>
+      <MDBContainer>
+         
+          <NavLink to='/projects'>
               <MDBBtn className='m-4'>
-                  to graphic design
+                  return to project selection
               </MDBBtn>
           </NavLink>
-      <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
-        <MDBCol>
+          <NavLink to='/web_projects'>
+              <MDBBtn className='m-4'>
+                  to web design
+              </MDBBtn>
+          </NavLink>
+          <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
+              <MDBCol>
                   <MDBCard className='h-100'>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                           <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' fluid alt='...' />
@@ -27,14 +26,14 @@ const Projects = () => {
                           </a>
                       </MDBRipple>
                       <MDBCardBody>
-                          <MDBCardTitle>Card title</MDBCardTitle>
+                          <MDBCardTitle>Card title graphic</MDBCardTitle>
                           <MDBCardText>
                               Some quick example text to build on the card title and make up the bulk of the card's content.
                           </MDBCardText>
                           <MDBBtn href='#'>Button</MDBBtn>
                       </MDBCardBody>
                   </MDBCard>
-        </MDBCol>
+              </MDBCol>
               <MDBCol>
                   <MDBCard>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
@@ -120,8 +119,8 @@ const Projects = () => {
                       </MDBCardBody>
                   </MDBCard>
               </MDBCol>
-              
-          {/* <MDBCol>
+
+              {/* <MDBCol>
               <MDBCard className='h-100'>
                   <MDBCardImage
                       src='https://mdbootstrap.com/img/new/standard/city/041.webp'
@@ -138,10 +137,10 @@ const Projects = () => {
               </MDBCard>
           </MDBCol> */}
 
-      </MDBRow>
-      <br/>
+          </MDBRow>
+          <br />
       </MDBContainer>
   )
 }
 
-export default Projects
+export default GraphicDesign

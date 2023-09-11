@@ -1,5 +1,6 @@
 import { MDBCol, MDBContainer, MDBRow } from 'mdb-react-ui-kit'
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const TypeProjects = () => {
     return (
@@ -9,17 +10,21 @@ const TypeProjects = () => {
                 <MDBCol>
                     <div className='bg-image hover-overlay'>
                         <img src='https://mdbootstrap.com/img/new/fluid/city/055.webp' className='img-fluid' />
-                        <a href='#!'>
+                        <NavLink to='/web_projects'>
+                        
                             <div className='mask overlay' style={{ backgroundColor: 'rgba(57, 192, 237, 0.2)' }}></div>
-                        </a>
+                        
+                        </NavLink>
                     </div>
                 </MDBCol>
                 <MDBCol>
                     <div className='bg-image hover-overlay'>
                         <img src='https://mdbootstrap.com/img/new/fluid/city/055.webp' className='img-fluid' />
-                        <a href='#!'>
+                        <NavLink to='/graphic_projects'>
+                        
                             <div className='mask overlay' style={{ backgroundColor: 'rgba(57, 192, 237, 0.2)' }}></div>
-                        </a>
+                        
+                        </NavLink>
                     </div>
                 </MDBCol>
             </MDBRow>

@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import TypeProjects from './components/TypeProjects';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
+import GraphicDesign from './components/GraphicDesign';
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
       <NavBar />
       <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/projects" element={<Projects />} />
+          <Route exact path="/projects" element={<TypeProjects />} />
+          <Route exact path='/web_projects' element={<Projects />} />
+          <Route exact path='/graphic_projects' element={<GraphicDesign />} />
       {/* <Header /> */}
       {/* <TypeProjects /> */}
       {/* <Projects /> */}
