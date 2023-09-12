@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MDBNavbar, MDBCollapse, MDBContainer, MDBDropdown, MDBDropdownItem, MDBDropdownMenu, MDBDropdownToggle, MDBIcon, MDBNavbarItem, MDBNavbarLink, MDBNavbarNav, MDBNavbarToggler, MDBNavbarBrand } from 'mdb-react-ui-kit';
+import { MDBNavbar, MDBCollapse, MDBContainer, MDBDropdown, MDBDropdownItem, MDBDropdownMenu, MDBDropdownToggle, MDBIcon, MDBNavbarItem, MDBNavbarLink, MDBNavbarNav, MDBNavbarToggler, MDBNavbarBrand, MDBBtn } from 'mdb-react-ui-kit';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { NavLink } from 'react-router-dom';
@@ -7,12 +7,17 @@ import { NavLink } from 'react-router-dom';
 const NavBar = () => {
     const [showNavRight, setShowNavRight] = useState(false);
 
+    const activeLink = 'text-info fw-bold';
+    const normalLink = 'text-dark fw-lighter';
+
     return (
 
-        <MDBNavbar expand='lg' sticky dark bgColor='dark'>
+        <MDBNavbar expand='lg' sticky  bgColor='light'>
             <MDBContainer >
-                <NavLink to='/'>
-                    <MDBNavbarBrand>Navbar</MDBNavbarBrand>
+                <NavLink to='/'  >
+                    <MDBNavbarBrand>
+                       Evgeniya Ivchenko
+                        </MDBNavbarBrand>
                 </NavLink>
 
                 
@@ -29,27 +34,42 @@ const NavBar = () => {
                 </MDBNavbarToggler>
 
                 <MDBCollapse navbar show={showNavRight}>
-                    <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
-                        <MDBNavbarItem>
-                            <NavLink to='/'>
-                                <MDBNavbarLink>
+                    <MDBNavbarNav  right fullWidth={false} className='mb-2 mb-lg-0'>
+                        <MDBNavbarItem  >
+                            <MDBNavbarLink >
+                            <NavLink to='/' className={({ isActive }) => isActive ? activeLink : normalLink}>
+                                  
+                               
+                                    {/* <MDBBtn color='light' className='btn btn-outline-light  text-info'> */}
                                     Home
-                                </MDBNavbarLink>
+                               
+                         
                             </NavLink>
+                            </MDBNavbarLink> 
+                            
                         </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <NavLink to='/projects'>
-                                <MDBNavbarLink>
+                        <MDBNavbarItem >
+                            <MDBNavbarLink >
+                            <NavLink to='/projects' className={({ isActive }) => isActive ? activeLink : normalLink}>
+                                
+                                    {/* <MDBBtn color='light' className='btn btn-outline-light  text-info'> */}
+                                    {/* <span className=' list-group-item-primary'>Projects</span> */}
                                     Projects
-                                </MDBNavbarLink>
+                                    {/* </MDBBtn> */}
+                               
                             </NavLink>
+                            </MDBNavbarLink>
                         </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <NavLink to='/info'>
-                                <MDBNavbarLink>
+                        <MDBNavbarItem >
+                            <MDBNavbarLink >
+                            <NavLink to='/info' className={({ isActive }) => isActive ? activeLink : normalLink}>
+                                
+                                    {/* <MDBBtn color='light' className='btn btn-outline-light  text-info'> */}
                                     Info
-                                </MDBNavbarLink>
+                                    {/* </MDBBtn> */}
+                               
                             </NavLink>
+                            </MDBNavbarLink>
                         </MDBNavbarItem>
 
                        

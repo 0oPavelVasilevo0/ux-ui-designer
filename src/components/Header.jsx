@@ -9,7 +9,7 @@ const Header = () => {
                 <div className="mask text-white" style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }} >
                     <div className='d-flex justify-content-center align-items-center h-100'>
                         <div className='text-white'>
-                            <h1 className='mb-3 '>Heading</h1>
+                            <h1 className='mb-3 '>Hello, my name is Evgeniya. I am designer UI/UX</h1>
                             <h4 className='mb-3'>Subheading</h4>
                            
                                 <BioModal />

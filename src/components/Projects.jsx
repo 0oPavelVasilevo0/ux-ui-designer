@@ -6,7 +6,7 @@ const Projects = () => {
   return (
       <>
        
-      <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
+      <MDBRow className='row-cols-1 row-cols-md-2 g-5'>
         <MDBCol>
                   <MDBCard className='h-100'>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>

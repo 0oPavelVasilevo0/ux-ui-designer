@@ -6,10 +6,13 @@ const BioModal = () => {
 
     const toggleShow = () => setTopRightModal(!topRightModal);
 
+    const activeLink = 'text-light';
+    const normalLink = 'btn-outline-light';
+// 'btn btn-outline-light btn-lg text-dark'
     return (
         <>
-            <MDBBtn onClick={toggleShow} color='light' className='btn btn-outline-light btn-lg text-info'>Bio</MDBBtn>
-
+            {/* <MDBBtn onClick={toggleShow} color='light' className={({ isActive }) => isActive ? activeLink : normalLink}>Bio</MDBBtn> */}
+            <MDBBtn onClick={toggleShow} color='light' className='btn btn-outline-light btn-lg text-light'>Bio</MDBBtn>
             <MDBModal
                 animationDirection='right'
                 show={topRightModal}
