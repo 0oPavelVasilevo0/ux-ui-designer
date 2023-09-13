@@ -1,10 +1,9 @@
-import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardText, MDBCardTitle, MDBCol, MDBCollapse, MDBContainer, MDBRipple, MDBRow } from 'mdb-react-ui-kit'
+import { MDBBtn, MDBCard, MDBCardBody, MDBCardFooter, MDBCardImage, MDBCardText, MDBCardTitle, MDBCol, MDBCollapse, MDBContainer, MDBRipple, MDBRow } from 'mdb-react-ui-kit'
 import React from 'react'
 import Modal from './Modal'
 import img1 from './../img/projects/Login.png'
 import img2 from './../img/projects/Group_13.png'
 import img3 from './../img/projects/Frame_547.png'
-import img4 from './../img/projects/Artboard.png'
 import img5 from './../img/projects/emirares_page.png'
 import img6 from './../img/projects/85936e881161615dd5b6.gif'
 const Projects = () => {
@@ -128,9 +127,18 @@ const Projects = () => {
                                   content is a little bit longer.
                               </MDBCardText>
                               <MDBCardText>
+                                      
                                   <small className='text-muted'>Last updated 3 mins ago</small>
+                                     
                               </MDBCardText>
+                                  <MDBCardText className='text-end'>
+                                <Modal />
+                              </MDBCardText>
+                              
+                                 
                           </MDBCardBody>
+                             
+                            
                       </MDBCol>
                   </MDBRow>
               </MDBCard>
@@ -181,7 +189,7 @@ const Projects = () => {
                   <MDBCard style={{ maxWidth: '100%' }}>
                       <MDBRow className='g-0'>
                           <MDBCol md='6'>
-                              <MDBCardImage src={img4} alt='...' fluid />
+                              <MDBCardImage src={img3} alt='...' fluid />
                           </MDBCol>
                           <MDBCol md='6'>
                               <MDBCardBody>
