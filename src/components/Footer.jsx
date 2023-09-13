@@ -11,11 +11,19 @@ const Footer = () => {
 
               <div>
                   <a href='#' className='me-4 text-reset'>
-                      <MDBIcon fab icon="instagram" />
+                      <MDBIcon fab icon="instagram" className='text-danger' />
                   </a>
                   <a href='#' className='me-4 text-reset'>
-                      <MDBIcon fab icon="linkedin"  />
+                      <MDBIcon fab icon="linkedin" className='text-primary' />
                       
+                  </a>
+                  <a href='#' className='me-4 text-reset'>
+                      <MDBIcon fab icon="telegram" className='text-info' />
+
+                  </a>
+                  <a href='#' className='me-4 text-reset'>
+                      <MDBIcon far icon="envelope" className='text-warning' />
+
                   </a>
                   
               </div>
@@ -27,8 +35,8 @@ const Footer = () => {
                   <MDBRow className='mt-3'>
                       <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
                           <h6 className='text-uppercase fw-bold mb-4'>
-                              <MDBIcon icon="gem" className="me-3" />
-                              Company name
+                              <MDBIcon far icon="object-group" className="me-3 text-success" />
+                              Ivchenko UX-UI
                           </h6>
                           <p>
                               Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
@@ -40,22 +48,22 @@ const Footer = () => {
                           <h6 className='text-uppercase fw-bold mb-4'>Skills</h6>
                           <p>
                               <a href='#!' className='text-reset'>
-                                 aaaaa
+                                  <MDBIcon fab icon="figma" /> Figma
+                              </a>
+                          </p>
+                          <p>
+                              <a href='#!' className='text-info'>
+                                  <MDBIcon fab icon="adobe" /> Adobe
                               </a>
                           </p>
                           <p>
                               <a href='#!' className='text-reset'>
-                                 bbbb
+                                  <MDBIcon fab icon="confluence" /> Confluence
                               </a>
                           </p>
                           <p>
                               <a href='#!' className='text-reset'>
-                              cccc
-                              </a>
-                          </p>
-                          <p>
-                              <a href='#!' className='text-reset'>
-                                ddddd
+                                  <MDBIcon fas icon="icons" />
                               </a>
                           </p>
                       </MDBCol>

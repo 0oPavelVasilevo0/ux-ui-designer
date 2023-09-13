@@ -1,5 +1,6 @@
-import { MDBBtn, MDBModal, MDBModalBody, MDBModalContent, MDBModalDialog, MDBModalFooter, MDBModalHeader, MDBModalTitle } from 'mdb-react-ui-kit';
+import { MDBBtn, MDBCardImage, MDBModal, MDBModalBody, MDBModalContent, MDBModalDialog, MDBModalFooter, MDBModalHeader, MDBModalTitle } from 'mdb-react-ui-kit';
 import React, { useState } from 'react'
+import avatar from './../img/avatar.jpg'
 
 const BioModal = () => {
     const [topRightModal, setTopRightModal] = useState(false);
@@ -25,17 +26,18 @@ const BioModal = () => {
                             <MDBModalTitle>My bio</MDBModalTitle>
                             <MDBBtn
                                 color='none'
-                                className='btn-close btn-close-white'
+                                className='btn-close btn-close-dark'
                                 onClick={toggleShow}
                             ></MDBBtn>
                         </MDBModalHeader>
                         <MDBModalBody>
                             <div className='row'>
-                                <div className='col-3 text-center'>
+                                <div className='col-6 text-center'>
                                     {/* <i className='fas fa-shopping-cart fa-4x text-info'></i> */}
+                                    <MDBCardImage src={avatar} fluid alt='...'></MDBCardImage>
                                 </div>
 
-                                <div className='col-9'>
+                                <div className='col-6 text-dark'>
                                     <p>Do you need more time to make a purchase decision?</p>
                                     <p>No pressure, your product will be waiting for you in the cart.</p>
                                 </div>

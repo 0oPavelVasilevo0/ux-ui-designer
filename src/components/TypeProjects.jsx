@@ -17,7 +17,8 @@ const TypeProjects = () => {
 
     return (
 
-        <MDBContainer fluid className='pb-3 bg-image' style={{ backgroundImage: `url(${require('./../../src/img/stock_.png')})` }} >
+        // <MDBContainer fluid className='pb-3 bg-image' style={{ backgroundImage: `url(${require('./../../src/img/stock_.png')})` }} >
+            <MDBContainer fluid className='pb-3 bg-image' >
             {/* <MDBContainer fluid  style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}> */}
                 <MDBContainer>
                     <MDBContainer className='pt-3' >

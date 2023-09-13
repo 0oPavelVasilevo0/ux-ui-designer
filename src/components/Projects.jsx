@@ -1,16 +1,21 @@
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardText, MDBCardTitle, MDBCol, MDBCollapse, MDBContainer, MDBRipple, MDBRow } from 'mdb-react-ui-kit'
 import React from 'react'
 import Modal from './Modal'
-
+import img1 from './../img/projects/Login.png'
+import img2 from './../img/projects/Group_13.png'
+import img3 from './../img/projects/Frame_547.png'
+import img4 from './../img/projects/Artboard.png'
+import img5 from './../img/projects/emirares_page.png'
+import img6 from './../img/projects/85936e881161615dd5b6.gif'
 const Projects = () => {
   return (
       <>
        
-      <MDBRow className='row-cols-1 row-cols-md-2 g-5'>
-        <MDBCol>
+      <MDBRow className='row-cols-1 row-cols-md-1 g-5'>
+        {/* <MDBCol>
                   <MDBCard className='h-100'>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-                          <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' fluid alt='...' />
+                          <MDBCardImage src={img1} fluid alt='...' />
                        
                               <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
                         
@@ -20,14 +25,14 @@ const Projects = () => {
                           <MDBCardText>
                               Web design
                           </MDBCardText>
-                          <MDBBtn href='#'><Modal /></MDBBtn>
+                          <MDBBtn tag='a' href='#'><Modal /></MDBBtn>
                       </MDBCardBody>
                   </MDBCard>
         </MDBCol>
               <MDBCol>
                   <MDBCard className='h-100'>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-                          <MDBCardImage src='https://mdbootstrap.com/img/new/standard/city/041.webp' fluid alt='...' />
+                          <MDBCardImage src={img2} fluid alt='...' />
                           
                               <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
                           
@@ -37,14 +42,14 @@ const Projects = () => {
                           <MDBCardText>
                               Web design
                           </MDBCardText>
-                          <MDBBtn href='#'>Button</MDBBtn>
+                          <MDBBtn href='#!' >Button</MDBBtn>
                       </MDBCardBody>
                   </MDBCard>
               </MDBCol>
               <MDBCol>
                   <MDBCard className='h-100'>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-                          <MDBCardImage src='https://mdbootstrap.com/img/new/standard/city/042.webp' fluid alt='...' />
+                          <MDBCardImage src={img3} fluid alt='...' />
                           
                               <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
                         
@@ -61,7 +66,7 @@ const Projects = () => {
               <MDBCol>
                   <MDBCard className='h-100'>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-                          <MDBCardImage src='https://mdbootstrap.com/img/new/standard/city/044.webp' fluid alt='...' />
+                          <MDBCardImage src={img4} fluid alt='...' />
                           
                               <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
                         
@@ -78,7 +83,7 @@ const Projects = () => {
               <MDBCol>
                   <MDBCard className='h-100'>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-                          <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' fluid alt='...' />
+                          <MDBCardImage src={img5} fluid alt='...' />
                           
                               <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
                           
@@ -95,7 +100,7 @@ const Projects = () => {
               <MDBCol>
                   <MDBCard className='h-100'>
                       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-                          <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' fluid alt='...' />
+                          <MDBCardImage src={img6} fluid alt='...' />
                          
                               <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
                         
@@ -108,10 +113,136 @@ const Projects = () => {
                           <MDBBtn href='#'>Button</MDBBtn>
                       </MDBCardBody>
                   </MDBCard>
+              </MDBCol> */}
+              <MDBCol>
+              <MDBCard style={{ maxWidth: '100%' }}>
+                  <MDBRow className='g-0'>
+                      <MDBCol md='6'>
+                          <MDBCardImage src={img1} alt='...' fluid />
+                      </MDBCol>
+                      <MDBCol md='6'>
+                          <MDBCardBody>
+                              <MDBCardTitle>Card title</MDBCardTitle>
+                              <MDBCardText>
+                                  This is a wider card with supporting text below as a natural lead-in to additional content. This
+                                  content is a little bit longer.
+                              </MDBCardText>
+                              <MDBCardText>
+                                  <small className='text-muted'>Last updated 3 mins ago</small>
+                              </MDBCardText>
+                          </MDBCardBody>
+                      </MDBCol>
+                  </MDBRow>
+              </MDBCard>
               </MDBCol>
-              
+              <MDBCol>
+                  <MDBCard style={{ maxWidth: '100%' }}>
+                      <MDBRow className='g-0'>
+                          <MDBCol md='6'>
+                              <MDBCardImage src={img2} alt='...' fluid />
+                          </MDBCol>
+                          <MDBCol md='6'>
+                              <MDBCardBody>
+                                  <MDBCardTitle>Card title</MDBCardTitle>
+                                  <MDBCardText>
+                                      This is a wider card with supporting text below as a natural lead-in to additional content. This
+                                      content is a little bit longer.
+                                  </MDBCardText>
+                                  <MDBCardText>
+                                      <small className='text-muted'>Last updated 3 mins ago</small>
+                                  </MDBCardText>
+                              </MDBCardBody>
+                          </MDBCol>
+                      </MDBRow>
+                  </MDBCard>
+              </MDBCol>
+              <MDBCol>
+                  <MDBCard style={{ maxWidth: '100%' }}>
+                      <MDBRow className='g-0'>
+                          <MDBCol md='6'>
+                              <MDBCardImage src={img3} alt='...' fluid />
+                          </MDBCol>
+                          <MDBCol md='6'>
+                              <MDBCardBody>
+                                  <MDBCardTitle>Card title</MDBCardTitle>
+                                  <MDBCardText>
+                                      This is a wider card with supporting text below as a natural lead-in to additional content. This
+                                      content is a little bit longer.
+                                  </MDBCardText>
+                                  <MDBCardText>
+                                      <small className='text-muted'>Last updated 3 mins ago</small>
+                                  </MDBCardText>
+                              </MDBCardBody>
+                          </MDBCol>
+                      </MDBRow>
+                  </MDBCard>
+              </MDBCol>
+              <MDBCol>
+                  <MDBCard style={{ maxWidth: '100%' }}>
+                      <MDBRow className='g-0'>
+                          <MDBCol md='6'>
+                              <MDBCardImage src={img4} alt='...' fluid />
+                          </MDBCol>
+                          <MDBCol md='6'>
+                              <MDBCardBody>
+                                  <MDBCardTitle>Card title</MDBCardTitle>
+                                  <MDBCardText>
+                                      This is a wider card with supporting text below as a natural lead-in to additional content. This
+                                      content is a little bit longer.
+                                  </MDBCardText>
+                                  <MDBCardText>
+                                      <small className='text-muted'>Last updated 3 mins ago</small>
+                                  </MDBCardText>
+                              </MDBCardBody>
+                          </MDBCol>
+                      </MDBRow>
+                  </MDBCard>
+              </MDBCol>
+              <MDBCol>
+                  <MDBCard style={{ maxWidth: '100%' }}>
+                      <MDBRow className='g-0'>
+                          <MDBCol md='6'>
+                              <MDBCardImage src={img5} alt='...' fluid />
+                          </MDBCol>
+                          <MDBCol md='6'>
+                              <MDBCardBody>
+                                  <MDBCardTitle>Card title</MDBCardTitle>
+                                  <MDBCardText>
+                                      This is a wider card with supporting text below as a natural lead-in to additional content. This
+                                      content is a little bit longer.
+                                  </MDBCardText>
+                                  <MDBCardText>
+                                      <small className='text-muted'>Last updated 3 mins ago</small>
+                                  </MDBCardText>
+                              </MDBCardBody>
+                          </MDBCol>
+                      </MDBRow>
+                  </MDBCard>
+              </MDBCol>
+              <MDBCol>
+                  <MDBCard style={{ maxWidth: '100%' }}>
+                      <MDBRow className='g-0'>
+                          <MDBCol md='6'>
+                              <MDBCardImage src={img6} alt='...' fluid />
+                          </MDBCol>
+                          <MDBCol md='6'>
+                              <MDBCardBody>
+                                  <MDBCardTitle>Card title</MDBCardTitle>
+                                  <MDBCardText>
+                                      This is a wider card with supporting text below as a natural lead-in to additional content. This
+                                      content is a little bit longer.
+                                  </MDBCardText>
+                                  <MDBCardText>
+                                      <small className='text-muted'>Last updated 3 mins ago</small>
+                                  </MDBCardText>
+                              </MDBCardBody>
+                          </MDBCol>
+                      </MDBRow>
+                  </MDBCard>
+              </MDBCol>
 
       </MDBRow>
+          
       </>
   )
 }

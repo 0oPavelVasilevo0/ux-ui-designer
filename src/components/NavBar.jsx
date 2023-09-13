@@ -18,8 +18,8 @@ const NavBar = () => {
         <MDBNavbar expand='lg' sticky bgColor='light'>
             <MDBContainer >
                 <NavLink to='/'  >
-                    <MDBNavbarBrand>
-                        Evgeniya Ivchenko
+                    <MDBNavbarBrand className='text-success fw-bold'>
+                        <span className='text-danger'>Evgeniya</span>Ivchenko
                     </MDBNavbarBrand>
                 </NavLink>
                 <MDBNavbarToggler
