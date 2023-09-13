@@ -11,19 +11,21 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
 import GraphicDesign from './components/GraphicDesign';
 import Info from './components/Info';
+import ScrollToTop from './utils/scrollToTop';
 
 function App() {
   return (
     // <div className="App">
     <>
     <Router>
+      <ScrollToTop />
       <NavBar />
       <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/projects" element={<TypeProjects />} />
+          <Route exact path='/info' element={<Info />} />
           <Route exact path='/web_projects' element={<Projects />} />
           <Route exact path='/graphic_projects' element={<GraphicDesign />} />
-          <Route exact path='/info' element={<Info />} />
       {/* <Header /> */}
       {/* <TypeProjects /> */}
       {/* <Projects /> */}

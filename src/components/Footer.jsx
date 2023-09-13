@@ -10,25 +10,16 @@ const Footer = () => {
               </div>
 
               <div>
-                  {/* <a href='#' className='me-4 text-reset'>
-                      <MDBIcon fab icon="facebook-f" />
-                  </a> */}
-                  {/* <a href='#' className='me-4 text-reset'>
-                      <MDBIcon fab icon="twitter" />
-                  </a> */}
-                  {/* <a href='#' className='me-4 text-reset'>
-                      <MDBIcon fab icon="google" />
-                  </a> */}
                   <a href='#' className='me-4 text-reset'>
                       <MDBIcon fab icon="instagram" />
                   </a>
                   <a href='#' className='me-4 text-reset'>
-                      <MDBIcon fab icon="linkedin" />
+                      <MDBIcon fab icon="linkedin"  />
+                      
                   </a>
-                  {/* <a href='#' className='me-4 text-reset'>
-                      <MDBIcon fab icon="github" />
-                  </a> */}
+                  
               </div>
+
           </section>
 
           <section className=''>
@@ -46,25 +37,25 @@ const Footer = () => {
                       </MDBCol>
 
                       <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-                          <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
+                          <h6 className='text-uppercase fw-bold mb-4'>Skills</h6>
                           <p>
                               <a href='#!' className='text-reset'>
-                                  Angular
+                                 aaaaa
                               </a>
                           </p>
                           <p>
                               <a href='#!' className='text-reset'>
-                                  React
+                                 bbbb
                               </a>
                           </p>
                           <p>
                               <a href='#!' className='text-reset'>
-                                  Vue
+                              cccc
                               </a>
                           </p>
                           <p>
                               <a href='#!' className='text-reset'>
-                                  Laravel
+                                ddddd
                               </a>
                           </p>
                       </MDBCol>
@@ -93,7 +84,7 @@ const Footer = () => {
                           </p>
                       </MDBCol>
 
-                      <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
+                      <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4' id='contacts'>
                           <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
                           <p>
                               <MDBIcon icon="home" className="me-2" />
