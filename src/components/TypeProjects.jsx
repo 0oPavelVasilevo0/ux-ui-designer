@@ -15,25 +15,25 @@ const TypeProjects = () => {
         setJustifyActive(value);
     };
     
-    const activeLink = 'text-light fw-bold bg-secondary';
-    // const normalLink = 'text-dark fw-lighter bg-white';
+    const activeLink = 'text-white fw-bold bg-transparent shadow-3-strong square border border-2 border-white ';
+    const normalLink = 'text-white text-opacity-50 fw-bold bg-transparent shadow-3-strong ';
 
     return (
 
         // <MDBContainer fluid className='pb-3 bg-image' style={{ backgroundImage: `url(${require('./../../src/img/stock_.png')})` }} >
-            <MDBContainer fluid className='pb-3 bg-image' >
+        <MDBContainer fluid className='pb-3 bg-secondary'  >
             {/* <MDBContainer fluid  style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}> */}
                 <MDBContainer>
                     <MDBContainer  className='pt-3 px-0' >
                     <MDBTabs pills justify className='mb-5'>
                             <MDBTabsItem>
                             <MDBTabsLink onClick={() => handleJustifyClick('tab1')} active={justifyActive === 'tab1'}
-                                className={justifyActive === 'tab1' ? activeLink  :'none'}>
+                                className={ justifyActive === 'tab1' ? activeLink : normalLink }>
                                     Web
                                 </MDBTabsLink>
                             </MDBTabsItem>
                             <MDBTabsItem >
-                            <MDBTabsLink onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'} className={`ms-3 me-0' ${ justifyActive === 'tab2' ? activeLink: 'none'}`}>
+                            <MDBTabsLink onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'} className={`ms-3 me-0 ${ justifyActive === 'tab2' ? activeLink: normalLink}`}>
                                     Graphic
                                 </MDBTabsLink>
                             </MDBTabsItem>

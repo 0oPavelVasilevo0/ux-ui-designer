@@ -7,19 +7,19 @@ import { NavLink } from 'react-router-dom';
 const NavBar = () => {
     const [showNavRight, setShowNavRight] = useState(false);
 
-    const activeLink = 'text-info fw-bold';
-    const normalLink = 'text-dark fw-lighter';
+    const activeLink = 'text-light fw-bold square border-bottom border-white border-2';
+    const normalLink = 'text-light fw-lighter ';
 
     const closeNavbar = () => {
         setShowNavRight(false);
     }
 
     return (
-        <MDBNavbar expand='lg' sticky bgColor='light'>
+        <MDBNavbar expand='lg' sticky bgColor='info'>
             <MDBContainer >
                 <NavLink to='/'  >
-                    <MDBNavbarBrand className='text-success fw-bold'>
-                        <span className='text-danger'>Evgeniya</span>Ivchenko
+                    <MDBNavbarBrand className='text-warning fw-bold'>
+                        <span className='text-light'>Evgeniya</span>Ivchenko
                     </MDBNavbarBrand>
                 </NavLink>
                 <MDBNavbarToggler
