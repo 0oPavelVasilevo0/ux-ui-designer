@@ -119,7 +119,7 @@ const Projects = () => {
                             <MDBCol md='6'>
                                 <MDBCardImage src={img1} alt='...' fluid />
                             </MDBCol>
-                            <MDBCol md='6' className='bg-secondary text-light'>
+                            <MDBCol md='6' className='bg-dark text-light'>
                                 <MDBCardBody>
                                     <MDBCardTitle>Card title</MDBCardTitle>
                                     <MDBCardText>

@@ -15,11 +15,11 @@ const NavBar = () => {
     }
 
     return (
-        <MDBNavbar expand='lg' sticky bgColor='info'>
+        <MDBNavbar expand='lg' sticky bgColor='dark'>
             <MDBContainer >
                 <NavLink to='/'  >
                     <MDBNavbarBrand className='text-warning fw-bold'>
-                        <span className='text-light'>Evgeniya</span>Ivchenko
+                        <span className='text-light'>Evgeniya </span>Ivchenko
                     </MDBNavbarBrand>
                 </NavLink>
                 <MDBNavbarToggler
@@ -57,7 +57,7 @@ const NavBar = () => {
                             </MDBNavbarLink>
                         </MDBNavbarItem>
                         <MDBNavbarItem onClick={closeNavbar}>
-                            <MDBNavbarLink href='#contacts' >
+                            <MDBNavbarLink href='#contacts' className='text-secondary'>
                                 Contacts
                             </MDBNavbarLink>
                         </MDBNavbarItem>
