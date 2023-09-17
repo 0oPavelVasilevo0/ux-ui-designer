@@ -114,7 +114,7 @@ const Projects = () => {
                   </MDBCard>
               </MDBCol> */}
                 <MDBCol>
-                    <MDBCard style={{ maxWidth: '100%' }}>
+                    <MDBCard style={{ maxWidth: '100%' }} className='border border-4 border-white'>
                         <MDBRow className='g-0'>
                             <MDBCol md='6'>
                                 <MDBCardImage src={img1} alt='...' fluid />
@@ -124,7 +124,7 @@ const Projects = () => {
                                     <MDBCardTitle>Card title</MDBCardTitle>
                                     <MDBCardText>
                                         This is a wider card with supporting text below as a natural lead-in to additional content. This
-                                        content is a little bit longer.
+                                        content is a little bit longer
                                     </MDBCardText>
                                     <MDBCardText>
 

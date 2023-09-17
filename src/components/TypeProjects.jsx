@@ -18,10 +18,14 @@ const TypeProjects = () => {
     const activeLink = 'text-white fw-bold bg-transparent shadow-3-strong square border border-2 border-white ';
     const normalLink = 'text-white text-opacity-50 fw-bold bg-transparent shadow-3-strong ';
 
+    const activeLink1 = 'text-warning fw-bold bg-transparent shadow-3-strong square border border-2 border-warning ';
+    const normalLink1 = 'text-warning text-opacity-50 fw-bold bg-transparent shadow-3-strong ';
+
+
     return (
 
         // <MDBContainer fluid className='pb-3 bg-image' style={{ backgroundImage: `url(${require('./../../src/img/stock_.png')})` }} >
-        <MDBContainer fluid className='pb-3 bg-secondary'  >
+        <MDBContainer fluid className='pb-3 bg-dark '  >
             {/* <MDBContainer fluid  style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}> */}
                 <MDBContainer>
                     <MDBContainer  className='pt-3 px-0' >
@@ -33,7 +37,7 @@ const TypeProjects = () => {
                                 </MDBTabsLink>
                             </MDBTabsItem>
                             <MDBTabsItem >
-                            <MDBTabsLink onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'} className={`ms-3 me-0 ${ justifyActive === 'tab2' ? activeLink: normalLink}`}>
+                            <MDBTabsLink onClick={() => handleJustifyClick('tab2')} active={justifyActive === 'tab2'} className={`ms-3 me-0 ${ justifyActive === 'tab2' ? activeLink1: normalLink1}`}>
                                     Graphic
                                 </MDBTabsLink>
                             </MDBTabsItem>

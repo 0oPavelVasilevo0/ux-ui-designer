@@ -14,12 +14,12 @@ const GraphicDesign = () => {
          
           <MDBRow className='row-cols-1 row-cols-md-1 g-5'>
             <MDBCol>
-                <MDBCard style={{ maxWidth: '100%' }}>
+                  <MDBCard style={{ maxWidth: '100%' }} className='border border-4 border-warning'>
                     <MDBRow className='g-0'>
                         <MDBCol md='6'>
                             <MDBCardImage src={img1} alt='...' fluid />
                         </MDBCol>
-                        <MDBCol md='6'>
+                          <MDBCol md='6' className='bg-dark text-light'>
                             <MDBCardBody>
                                 <MDBCardTitle>Card title</MDBCardTitle>
                                 <MDBCardText>

@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 const NavBar = () => {
     const [showNavRight, setShowNavRight] = useState(false);
 
-    const activeLink = 'text-light fw-bold square border-bottom border-white border-2';
+    const activeLink = 'text-light fw-bold square border-bottom border-warning border-2 ';
     const normalLink = 'text-light fw-lighter ';
 
     const closeNavbar = () => {
@@ -34,13 +34,12 @@ const NavBar = () => {
                 </MDBNavbarToggler>
                 <MDBCollapse navbar show={showNavRight}>
                     <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
-                        <MDBNavbarItem onClick={closeNavbar}>
-                            <MDBNavbarLink >
-                                <NavLink to='/' className={({ isActive }) => isActive ? activeLink : normalLink}>
+                        <MDBNavbarItem  >
+                            <MDBNavbarLink>
+                                <NavLink to='/' onClick={closeNavbar} className={({ isActive }) => isActive ? activeLink : normalLink}>
                                     Home
                                 </NavLink>
                             </MDBNavbarLink>
-
                         </MDBNavbarItem>
                         <MDBNavbarItem onClick={closeNavbar}>
                             <MDBNavbarLink >
@@ -57,14 +56,14 @@ const NavBar = () => {
                             </MDBNavbarLink>
                         </MDBNavbarItem>
                         <MDBNavbarItem onClick={closeNavbar}>
-                            <MDBNavbarLink href='#contacts' className='text-secondary'>
+                            <MDBNavbarLink href='#contacts' className='text-secondary '>
                                 Contacts
                             </MDBNavbarLink>
                         </MDBNavbarItem>
 
                         <MDBNavbarItem>
                             <MDBDropdown>
-                                <MDBDropdownToggle tag='a' className='hidden-arrow me-3 me-lg-0 nav-link' style={{ cursor: 'pointer' }}>
+                                <MDBDropdownToggle tag='a' className='hidden-arrow me-3 me-lg-0 nav-link ' style={{ cursor: 'pointer' }}>
                                     <MDBIcon flag='united-kingdom' className='m-0' />
                                 </MDBDropdownToggle>
                                 <MDBDropdownMenu>
