@@ -8,7 +8,7 @@ const Project = ({ title, img, card, index }) => {
             <MDBCard style={{ maxWidth: '100%' }} className='border border-4 border-white'>
                 <MDBRow className='g-0'>
                     <MDBCol md='6'>
-                        <MDBCardImage src={img} alt={title} fluid />
+                        <MDBCardImage className='img-fluid rounded' src={img} alt={title} fluid />
                     </MDBCol>
                     <MDBCol md='6' className='bg-dark text-light'>
                         <MDBCardBody>

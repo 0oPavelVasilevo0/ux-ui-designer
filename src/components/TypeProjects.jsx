@@ -1,7 +1,10 @@
-import { MDBContainer, MDBTabs, MDBTabsContent, MDBTabsItem, MDBTabsLink, MDBTabsPane } from 'mdb-react-ui-kit'
+import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardText, MDBCardTitle, MDBCol, MDBContainer, MDBRow, MDBTabs, MDBTabsContent, MDBTabsItem, MDBTabsLink, MDBTabsPane } from 'mdb-react-ui-kit'
 import React, { useState } from 'react'
 import ProjectsWeb from './ProjectsWeb';
 import ProjectsGraphic from './ProjectsGraphic';
+import web from './../img/typeprojects/Web-Design.png'
+import graphic from './../img/typeprojects/grpahic-design.png'
+import { NavLink } from 'react-router-dom';
 
 const TypeProjects = () => {
 
@@ -23,10 +26,25 @@ const TypeProjects = () => {
 
 
     return (
+//    <MDBContainer>
+//         <MDBRow>
+//             <MDBCol sm='6'>
+//                 <MDBCard>
+//                         <NavLink to='/web_projects'>
+//                     <MDBCardImage src={web} alt='' fluid />
+//                         </NavLink>
+                   
+//                 </MDBCard>
+//             </MDBCol>
+//             <MDBCol sm='6'>
+//                 <MDBCard>
+//                     <MDBCardImage src={graphic} alt='' fluid/>
+//                 </MDBCard>
+//             </MDBCol>
+//         </MDBRow>
+//         </MDBContainer>
 
-        // <MDBContainer fluid className='pb-3 bg-image' style={{ backgroundImage: `url(${require('./../../src/img/stock_.png')})` }} >
         <MDBContainer fluid className='pb-3 bg-dark '  >
-            {/* <MDBContainer fluid  style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}> */}
                 <MDBContainer>
                     <MDBContainer  className='pt-3 px-0' >
                     <MDBTabs pills justify className='mb-5'>
@@ -43,44 +61,13 @@ const TypeProjects = () => {
                             </MDBTabsItem>
                         </MDBTabs>
                     </MDBContainer>
-
                     <MDBTabsContent>
                         <MDBTabsPane show={justifyActive === 'tab1'}><ProjectsWeb /></MDBTabsPane>
                         <MDBTabsPane show={justifyActive === 'tab2'}><ProjectsGraphic /></MDBTabsPane>
                     </MDBTabsContent>
                 </MDBContainer>
-            {/* </MDBContainer> */}
         </MDBContainer>
 
-
-        // <MDBContainer className="px-4 d-flex align-items-center justify-content-center" style={{ height: '100vh'}} >
-
-        //     <MDBRow className='row-cols-1 row-cols-md-2 g-4'>
-        //         <MDBCol>
-        //             <div className='bg-image hover-overlay'>
-        //                 <img src='https://mdbootstrap.com/img/new/fluid/city/055.webp' className='img-fluid' />
-        //                 <NavLink to='/web_projects'>
-
-        //                     <div className='mask overlay' style={{ backgroundColor: 'rgba(57, 192, 237, 0.2)' }}></div>
-
-        //                 </NavLink>
-        //             </div>
-        //         </MDBCol>
-        //         <MDBCol>
-        //             <div className='bg-image hover-overlay'>
-        //                 <img src='https://mdbootstrap.com/img/new/fluid/city/055.webp' className='img-fluid' />
-        //                 <NavLink to='/graphic_projects'>
-
-        //                     <div className='mask overlay' style={{ backgroundColor: 'rgba(57, 192, 237, 0.2)' }}></div>
-
-        //                 </NavLink>
-        //             </div>
-        //         </MDBCol>
-        //     </MDBRow>
-
-
-
-        // </MDBContainer>
     )
 }
 
