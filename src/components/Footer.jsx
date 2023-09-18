@@ -1,4 +1,8 @@
 import { MDBCol, MDBContainer, MDBFooter, MDBIcon, MDBRow } from 'mdb-react-ui-kit'
+import {SiAdobephotoshop} from 'react-icons/si'
+import {SiAdobeillustrator} from 'react-icons/si'
+import {FiFigma} from 'react-icons/fi'
+import { GiStripedSun } from 'react-icons/gi'
 import React from 'react'
 
 const Footer = () => {
@@ -35,7 +39,8 @@ const Footer = () => {
                     <MDBRow className='mt-3'>
                         <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
                             <h6 className='text-uppercase fw-bold mb-4'>
-                                <MDBIcon far icon="object-group" className="me-3 text-success" />
+                                {/* <MDBIcon far icon="object-group" className="me-3 text-success" /> */}
+                                <MDBIcon size='xl'>< GiStripedSun className="me-3 text-success"  /></MDBIcon> 
                                 Ivchenko UX-UI
                             </h6>
                             <p>
@@ -48,24 +53,29 @@ const Footer = () => {
                             <h6 className='text-uppercase fw-bold mb-4'>Skills</h6>
                             <p>
                                 <a href='#!' className='text-reset'>
-                                    <MDBIcon fab icon="figma" /> Figma
+                                    {/* <MDBIcon fab icon="figma" /> */}
+                                    <MDBIcon>< FiFigma className='text-info' /></MDBIcon> Figma
                                 </a>
                             </p>
                             <p>
-                                <a href='#!' className='text-info'>
-                                    <MDBIcon fab icon="adobe" /> Adobe
+                                <a href='#!' className='text-reset'>
+                                    {/* <MDBIcon fab icon="adobe" /> Adobe */}
+                                    <MDBIcon><SiAdobephotoshop className='text-info' /></MDBIcon> Photoshop
                                 </a>
                             </p>
+                            <p>
+                                <a href='#!' className='text-reset'>
+                                    {/* <MDBIcon fab icon="adobe" /> Adobe */}
+                                    <MDBIcon><SiAdobeillustrator className='text-info' /></MDBIcon> Illusatrator
+                                </a>
+                            </p>
+                            
                             <p>
                                 <a href='#!' className='text-reset'>
                                     <MDBIcon fab icon="confluence" /> Confluence
                                 </a>
                             </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    <MDBIcon fas icon="icons" />
-                                </a>
-                            </p>
+
                         </MDBCol>
 
                         <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
