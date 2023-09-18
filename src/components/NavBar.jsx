@@ -64,19 +64,20 @@ const NavBar = () => {
                         </MDBNavbarItem>
 
                         <MDBNavbarItem>
-                            <MDBDropdown>
+                            <MDBDropdown >
                                 <MDBDropdownToggle tag='a' className='hidden-arrow me-3 me-lg-0 nav-link ' style={{ cursor: 'pointer' }}>
                                     <MDBIcon flag='united-kingdom' className='m-0' />
                                 </MDBDropdownToggle>
-                                <MDBDropdownMenu>
+                                <MDBDropdownMenu className='bg-dark'>
                                     <MDBDropdownItem link>
                                         <MDBIcon flag='united-kingdom' />
-                                        English
+                                        <span className='text-light'>English</span>
                                         <MDBIcon fas icon='check' color='success' className='ms-2' />
                                     </MDBDropdownItem>
                                     <MDBDropdownItem link>
                                         <MDBIcon flag='russia' />
                                         Русский
+                                        <MDBIcon fas icon='check' color='success' className='ms-2' />
                                     </MDBDropdownItem>
                                 </MDBDropdownMenu>
                             </MDBDropdown>
