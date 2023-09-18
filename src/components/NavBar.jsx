@@ -3,11 +3,12 @@ import { MDBNavbar, MDBCollapse, MDBContainer, MDBDropdown, MDBDropdownItem, MDB
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { NavLink } from 'react-router-dom';
+import Modal from './Modal';
 
 const NavBar = () => {
     const [showNavRight, setShowNavRight] = useState(false);
 
-    const activeLink = 'text-light fw-bold square border-bottom border-warning border-2 ';
+    const activeLink = 'text-warning fw-bold square  '; //border-bottom border-warning border-2
     const normalLink = 'text-light fw-lighter ';
 
     const closeNavbar = () => {
@@ -34,9 +35,9 @@ const NavBar = () => {
                 </MDBNavbarToggler>
                 <MDBCollapse navbar show={showNavRight}>
                     <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
-                        <MDBNavbarItem  >
+                        <MDBNavbarItem onClick={closeNavbar} >
                             <MDBNavbarLink>
-                                <NavLink to='/' onClick={closeNavbar} className={({ isActive }) => isActive ? activeLink : normalLink}>
+                                <NavLink to='/'  className={({ isActive }) => isActive ? activeLink : normalLink}>
                                     Home
                                 </NavLink>
                             </MDBNavbarLink>
@@ -55,10 +56,11 @@ const NavBar = () => {
                                 </NavLink>
                             </MDBNavbarLink>
                         </MDBNavbarItem>
-                        <MDBNavbarItem onClick={closeNavbar}>
-                            <MDBNavbarLink href='#contacts' className='text-secondary '>
-                                Contacts
-                            </MDBNavbarLink>
+                        <MDBNavbarItem onClick={closeNavbar} >
+                        <MDBNavbarLink href='#contacts' className='text-secondary '>
+                               {/* <Modal /> */}
+                               Contact
+                             </MDBNavbarLink>
                         </MDBNavbarItem>
 
                         <MDBNavbarItem>

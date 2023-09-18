@@ -1,4 +1,4 @@
-import { MDBBtn, MDBModal, MDBModalBody, MDBModalContent, MDBModalDialog, MDBModalFooter, MDBModalHeader, MDBModalTitle } from 'mdb-react-ui-kit';
+import { MDBBtn, MDBModal, MDBModalBody, MDBModalContent, MDBModalDialog, MDBModalFooter, MDBModalHeader, MDBModalTitle, MDBNavbarItem, MDBNavbarLink } from 'mdb-react-ui-kit';
 import React, { useState } from 'react'
 
 const Modal = () => {
@@ -9,8 +9,7 @@ const Modal = () => {
 
   return (
       <>
-          <MDBBtn onClick={toggleShow}>more details</MDBBtn>
-
+          <MDBBtn onClick={toggleShow}>Contact</MDBBtn>
           <MDBModal tabIndex='-1' show={centredModal} setShow={setCentredModal}>
               <MDBModalDialog centered size='lg'>
                   <MDBModalContent>

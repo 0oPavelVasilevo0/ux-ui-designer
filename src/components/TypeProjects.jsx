@@ -1,7 +1,7 @@
 import { MDBContainer, MDBTabs, MDBTabsContent, MDBTabsItem, MDBTabsLink, MDBTabsPane } from 'mdb-react-ui-kit'
 import React, { useState } from 'react'
-import Projects from './Projects';
-import GraphicDesign from './GraphicDesign';
+import ProjectsWeb from './ProjectsWeb';
+import ProjectsGraphic from './ProjectsGraphic';
 
 const TypeProjects = () => {
 
@@ -45,8 +45,8 @@ const TypeProjects = () => {
                     </MDBContainer>
 
                     <MDBTabsContent>
-                        <MDBTabsPane show={justifyActive === 'tab1'}><Projects /></MDBTabsPane>
-                        <MDBTabsPane show={justifyActive === 'tab2'}><GraphicDesign /></MDBTabsPane>
+                        <MDBTabsPane show={justifyActive === 'tab1'}><ProjectsWeb /></MDBTabsPane>
+                        <MDBTabsPane show={justifyActive === 'tab2'}><ProjectsGraphic /></MDBTabsPane>
                     </MDBTabsContent>
                 </MDBContainer>
             {/* </MDBContainer> */}
