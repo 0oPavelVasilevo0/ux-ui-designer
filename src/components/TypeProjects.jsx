@@ -2,8 +2,6 @@ import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardText, MDBCardTitle, 
 import React, { useState } from 'react'
 import ProjectsWeb from './ProjectsWeb';
 import ProjectsGraphic from './ProjectsGraphic';
-import web from './../img/typeprojects/Web-Design.png'
-import graphic from './../img/typeprojects/grpahic-design.png'
 import { NavLink } from 'react-router-dom';
 
 const TypeProjects = () => {
