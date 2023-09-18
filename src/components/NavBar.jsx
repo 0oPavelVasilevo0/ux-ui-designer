@@ -31,7 +31,7 @@ const NavBar = () => {
                     aria-label='Toggle navigation'
                     onClick={() => setShowNavRight(!showNavRight)}
                 >
-                    <MDBIcon icon='bars' fas />
+                    <MDBIcon icon='bars' color='light' fas />
                 </MDBNavbarToggler>
                 <MDBCollapse navbar show={showNavRight}>
                     <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
