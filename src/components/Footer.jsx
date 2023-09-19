@@ -15,18 +15,18 @@ const Footer = () => {
 
                 <div>
                     <a href='#' className='me-4 text-reset'>
-                        <MDBIcon fab icon="instagram" className='text-danger' />
+                        <MDBIcon fab icon="instagram" size='lg' className='text-danger' />
                     </a>
                     <a href='#' className='me-4 text-reset'>
-                        <MDBIcon fab icon="linkedin" className='text-primary' />
+                        <MDBIcon fab icon="linkedin" size='lg' className='text-primary' />
 
                     </a>
                     <a href='#' className='me-4 text-reset'>
-                        <MDBIcon fab icon="telegram" className='text-info' />
+                        <MDBIcon fab icon="telegram" size='lg' className='text-info' />
 
                     </a>
                     <a href='#' className='me-4 text-reset'>
-                        <MDBIcon far icon="envelope" className='text-warning' />
+                        <MDBIcon far icon="envelope" size='lg' className='text-warning' />
 
                     </a>
 
@@ -78,7 +78,7 @@ const Footer = () => {
 
                         </MDBCol>
 
-                        <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
+                        {/* <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
                             <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
                             <p>
                                 <a href='#!' className='text-reset'>
@@ -100,7 +100,7 @@ const Footer = () => {
                                     Help
                                 </a>
                             </p>
-                        </MDBCol>
+                        </MDBCol> */}
 
                         <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4' id='contacts'>
                             <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>

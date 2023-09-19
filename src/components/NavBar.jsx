@@ -18,7 +18,7 @@ const NavBar = () => {
     return (
         <MDBNavbar expand='lg' sticky bgColor='dark'>
             <MDBContainer >
-                <NavLink to='/'  >
+                <NavLink to='/' >
                     <MDBNavbarBrand className='text-warning fw-bold'>
                         <span className='text-light'>Evgeniya </span>Ivchenko
                     </MDBNavbarBrand>
@@ -35,6 +35,7 @@ const NavBar = () => {
                 </MDBNavbarToggler>
                 <MDBCollapse navbar show={showNavRight}>
                     <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
+                        <NavLink to='/'>
                         <MDBNavbarItem onClick={closeNavbar} >
                             <MDBNavbarLink>
                                 <NavLink to='/'  className={({ isActive }) => isActive ? activeLink : normalLink}>
@@ -42,6 +43,8 @@ const NavBar = () => {
                                 </NavLink>
                             </MDBNavbarLink>
                         </MDBNavbarItem>
+                        </NavLink>
+                        <NavLink to='/projects'>
                         <MDBNavbarItem onClick={closeNavbar}>
                             <MDBNavbarLink >
                                 <NavLink to='/projects' className={({ isActive }) => isActive ? activeLink : normalLink}>
@@ -49,6 +52,8 @@ const NavBar = () => {
                                 </NavLink>
                             </MDBNavbarLink>
                         </MDBNavbarItem>
+                        </NavLink>
+                        <NavLink to='/info'>
                         <MDBNavbarItem onClick={closeNavbar}>
                             <MDBNavbarLink >
                                 <NavLink to='/info' className={({ isActive }) => isActive ? activeLink : normalLink}>
@@ -56,6 +61,7 @@ const NavBar = () => {
                                 </NavLink>
                             </MDBNavbarLink>
                         </MDBNavbarItem>
+                        </NavLink>
                         <MDBNavbarItem onClick={closeNavbar} >
                         <MDBNavbarLink href='#contacts' className='text-secondary '>
                                {/* <Modal /> */}
